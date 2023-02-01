@@ -1,0 +1,44 @@
+<h1>Two-Way-binding</h1>
+
+<p>Enter your name:</p>
+
+<input type="text"  [(ngModel)]="name">
+
+{{ name }}
+
+<button (click) = "my()">click</button>
+
+<hr><hr>
+
+<br><br>
+
+
+Quarter
+
+<select [(ngModel)]="SelQur"  (change)="qurchanged()">
+
+<option *ngFor="let Qur of Quarter" value="{{Qur}}">{{Qur}}</option>
+
+</select>
+
+Months
+
+
+<select [(ngModel)]="Selmon">
+
+  <option *ngFor="let mon of months" value="{{mon}}">{{mon}}</option>
+</select>
+
+
+
+
+
+<br><br>
+
+you are selecter {{SelQur}} {{Selmon}}
+<hr>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<select [(ngModel)]="selman">
+  <option *ngFor="let nam of name2" value="{{nam}}">{{nam}}</option>
+</select>

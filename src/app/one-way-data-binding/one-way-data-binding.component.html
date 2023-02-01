@@ -1,0 +1,67 @@
+<h1>One-Way Data-Binding 1</h1>
+
+<h4>Creat array and fiil then in select</h4>
+
+<!-- {{months}} -->
+
+<select (change)="monthchange($event)">
+    <option *ngFor="let month of months" value="{{month}}">{{month}}</option>
+</select>
+<br/> <hr>
+ <h4>Great the person of the name given in text-box after clicking on button</h4>
+
+ <br />
+
+<hr>
+
+<p>Enter your name</p>
+
+<input type="text" value="{{name}}" (input)="textinput($event)">
+
+<button (click)="clickme()">Clicked</button>
+
+
+{{name}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

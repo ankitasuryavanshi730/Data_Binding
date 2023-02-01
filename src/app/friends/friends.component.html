@@ -1,0 +1,10 @@
+<p>friends works!</p>
+
+
+<input type="text" [(ngModel)]="friend">
+
+<button (click) = "clicked()">click</button>
+
+<ul>
+  <li *ngFor="let fri of friends">{{fri}}  <button (click)="deletef()">x</button></li>
+</ul>
